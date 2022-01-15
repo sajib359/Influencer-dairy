@@ -74,10 +74,10 @@ hr{
 /* product section  */
 
 .product-details{
-    width: 1047px;
-    height: 1662px;
+    width: 1200px;
+    height: 1750px;
     background-color: turquoise;
-    align-content: center;
+    margin-left: 300px;
 }
 .collection{
     text-align: center;
@@ -100,9 +100,25 @@ hr{
     background-color: white;
     align-content: center;
     padding: 20px;
+    margin: 10px;
     
 }
 .product img{
     width: 300px;
     height: 256px;
+    margin-left: 20px;
 }
+.fa-star.filled{
+    color:goldenrod;
+}
+.ratting{
+    display: flex;
+
+}
+.number{
+    margin-left: 50px;
+    color: #5E6366;
+    font-size: 14px;
+    font-weight: 700;
+}
+
