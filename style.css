@@ -80,9 +80,10 @@ hr{
     
 }
 .logo-section{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    padding: 30px 50px;
 }
 .logo{
     width: 84px;
@@ -141,14 +142,14 @@ hr{
 }
 
 .review span {
-    color: var(--main-color);
+    color:gray;
     margin-left: 10px;
 }
 
 .see-more-btn a {
     float: right;
     margin-right: 70px;
-    color: var(--main-color);
+    color: gray;
     text-decoration: none;
     transition: .5s;
 }
@@ -172,6 +173,11 @@ hr{
     justify-content: space-between;
     margin-left: 10px;
 }
+.about-head{
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
 .last{
     margin: 30px;
 }
@@ -184,4 +190,81 @@ footer{
 .icon{
     color: white;
     text-align: center;
+}
+
+/* responsibe for mobile  */
+
+@media screen and (max-width: 668px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .menu {
+        display: none;
+      }
+      .influencer-left{
+        padding-right: 0;
+    }
+    .main-influnecer{
+        flex-direction: column-reverse;
+    }
+    .influencer-right img{
+        width: 300px;
+        height: 300px;
+    }
+    .logo-section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 0 0;
+    }
+    .collection-main{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about img{
+        width: 300px;
+        height: 300px;
+    }
+}
+/* Responsive Tablet  */
+@media screen and (min-width: 761px) and (max-width: 868px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .menu {
+        display: none;
+      }
+      .influencer-left{
+        padding-right: 0;
+    }
+    .main-influnecer{
+        flex-direction: column-reverse;
+    }
+    .influencer-right img{
+        width: 500px;
+        height: 500px;
+    }
+    .logo-section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 0 0;
+        
+    }
+    .collection-main{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about img{
+        width: 500px;
+        height: 500px;
+    }
 }
